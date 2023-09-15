@@ -1,5 +1,6 @@
 import Slider from 'react-slick';
 import { ratingsData } from '../../FakeData/RatingsData';
+import Heading from '../Others/Heading';
 
 export default function Reviews() {
     const settings = {
@@ -43,7 +44,9 @@ export default function Reviews() {
         <section id="reviews">
             <div className="mx-5">
                 <div className="max-w-screen-xl mx-auto py-10">
-                    <h1 className="border-b-2 border-[#5F49F2] mb-10 pb-5 text-2xl font-semibold">Reviews</h1>
+                    <Heading iconName="review" iconClass="h-7 w-7">
+                        Reviews
+                    </Heading>
                     <Slider {...settings} className="flex">
                         {ratingsData.map((data) => (
                             <div key={data.id} className="p-3">

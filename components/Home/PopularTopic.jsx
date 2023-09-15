@@ -1,18 +1,24 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 export default function PopularTopic({ topic }) {
     return (
-        <div>
-            <Link
-                href={`/topics/${topic.title.toLowerCase()}`}
-                className="border px-2 py-4 rounded-lg bg-primary shadow-xl cursor-pointer hover:scale-105 transition-all block"
-            >
-                <div className="flex flex-col justify-center items-center">
-                    <div className="border h-40 w-40 rounded-full overflow-hidden bg-white">
-                        <img src={topic?.img} alt="" />
+        <div className="flex justify-center items-center">
+            <Link href={`/topics/${topic.title.toLowerCase()}`} className="w-fit bg-white shadow-md rounded">
+                <div className="">
+                    <div className="flex flex-col justify-center items-center sm:w-28 sm:h-28 h-16 w-16">
+                        <div className=" bg-white">
+                            <Image
+                                height={60}
+                                width={60}
+                                className="sm:w-14 sm:h-14 h-10 w-10 mt-0.5"
+                                src={topic?.img}
+                                alt=""
+                            />
+                        </div>
+                        <h3 className="sm:mt-3 mt-0.5 sm:text-base text-xs text-gray-500">{topic?.title}</h3>
                     </div>
-                    <h3 className="mt-3 text-white">{topic?.title}</h3>
                 </div>
             </Link>
         </div>

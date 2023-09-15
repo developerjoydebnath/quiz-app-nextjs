@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Banner from '../../../components/Home/Banner';
+import ContactUs from '../../../components/Home/ContactUs';
 import PopularTopics from '../../../components/Home/PopularTopics';
 import Ratings from '../../../components/Home/Ratings';
 import Reviews from '../../../components/Home/Reviews';
@@ -16,7 +17,7 @@ export default function Landing() {
                 <Testimonials />
                 <Ratings />
                 <Reviews />
-                <div id="contact_us">contact us</div>
+                <ContactUs />
             </div>
         </div>
     );

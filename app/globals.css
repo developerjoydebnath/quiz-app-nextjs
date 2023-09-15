@@ -20,7 +20,8 @@ border-primary {
 }
 
 .js__bg-img-2{
-    background-image: url('/bg.svg');
+    /* background-image: url('/bg.svg'); */
+    background-color: #fde80e;
     background-size: cover;
 }
 

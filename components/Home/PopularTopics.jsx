@@ -11,7 +11,7 @@ export default function PopularTopics() {
             <div className="mx-5">
                 <div className="max-w-screen-xl md:mx-auto py-10">
                     <Heading iconName="trending">PopularTopics</Heading>
-                    <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 xsm:grid-cols-2 justify-center items-center gap-5">
+                    <div className="max-w-screen-md mx-auto grid lg:grid-cols-5 md:grid-cols-4 msm:grid-cols-4 sm:grid-cols-3 xsm:grid-cols-4 justify-center items-center gap-5 sm:mt-10">
                         {popularTopics.map((topic) => (
                             <PopularTopic key={topic.id} topic={topic} />
                         ))}

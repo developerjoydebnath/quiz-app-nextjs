@@ -8,7 +8,6 @@ import { userLogOut } from '../../redux/features/auth/authSlice';
 export default function Navbar() {
     const auth = useSelector((state) => state.auth);
     const dispatch = useDispatch();
-    console.log(auth);
 
     const handleLogout = () => {
         localStorage.removeItem('auth');

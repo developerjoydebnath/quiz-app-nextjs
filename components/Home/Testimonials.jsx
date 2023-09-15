@@ -4,7 +4,7 @@ import Heading from '../Others/Heading';
 
 export default function Testimonials() {
     return (
-        <section className="js__bg-img-3">
+        <section className="js__bg-img-3 mt-5">
             <div className="mx-5">
                 <div className="max-w-screen-xl mx-auto">
                     <Heading className="" iconClass="h-7 w-7" iconName="about-us">

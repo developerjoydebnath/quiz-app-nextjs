@@ -12839,7 +12839,7 @@ export const quizData = [
     },
     {
         id: 6,
-        topic: 'Mathematics',
+        topic: 'Math',
         data: [
             {
                 id: 1,

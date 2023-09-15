@@ -41,13 +41,13 @@ export default function Login() {
         <div className="w-full h-screen">
             <div className="flex justify-center items-center h-full">
                 <div className="border rounded-lg shadow-lg">
-                    <form className="m-10" onSubmit={handleLogin}>
+                    <form className="sm:m-10 m-6" onSubmit={handleLogin}>
                         <div className="flex justify-center">
                             <div className="p-2 rounded-full bg-slate-200">
-                                <Icon className="h-8 w-8" icon="lock" />
+                                <Icon className="sm:h-8 h-6 sm:w-8 w-6" icon="lock" />
                             </div>
                         </div>
-                        <h4 className="text-2xl font-bold text-center text-slate-600">Login</h4>
+                        <h4 className="sm:text-2xl text-xl font-bold text-center text-slate-600">Login</h4>
                         <div className="my-3">
                             <label htmlFor="email" className="text-sm text-slate-500">
                                 Email
@@ -55,7 +55,7 @@ export default function Login() {
                             <br />
                             <input
                                 required
-                                className="border outline-none w-80 h-10 rounded px-2"
+                                className="border outline-none sm:w-80 w-60 sm:h-10 h-8 rounded px-2"
                                 placeholder=""
                                 type="email"
                                 name="email"
@@ -73,7 +73,7 @@ export default function Login() {
                             <br />
                             <input
                                 required
-                                className="border outline-none w-80 h-10 rounded px-2"
+                                className="border outline-none sm:w-80 w-60 sm:h-10 h-8 rounded px-2"
                                 placeholder=""
                                 type="password"
                                 name="password"
@@ -86,7 +86,7 @@ export default function Login() {
                         </div>
                         <div className="my-5">
                             <input
-                                className="cursor-pointer w-80 h-10 bg-slate-300 rounded"
+                                className="cursor-pointer sm:w-80 w-60 sm:h-10 h-8 bg-slate-300 rounded font-bold"
                                 type="submit"
                                 value="Login"
                             />

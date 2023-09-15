@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ratingsData } from '../../FakeData/RatingsData';
+import Heading from '../Others/Heading';
 
 export default function Ratings() {
     const [oneStars, setOneStars] = React.useState(0);
@@ -44,7 +45,9 @@ export default function Ratings() {
             <div className="mx-5">
                 <div className="max-w-screen-xl mx-auto py-10">
                     <div>
-                        <h1 className="border-b-2 border-[#5F49F2] pb-5 mb-10 text-2xl font-semibold">Ratings</h1>
+                        <Heading iconName="rating" iconClass="h-6 w-6">
+                            Ratings
+                        </Heading>
                         <div className="sm:flex gap-5 ms-1">
                             <div className="text-start mb-5 sm:mb-0">
                                 <div>

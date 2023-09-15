@@ -8,6 +8,10 @@ const Heading = ({ children, iconName = '', className = '', iconClass }) => {
                 return '/trending.png';
             case 'about-us':
                 return '/about-us.png';
+            case 'review':
+                return '/complain.png';
+            case 'rating':
+                return '/rating.png';
             default:
                 return '';
         }

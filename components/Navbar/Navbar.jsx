@@ -14,7 +14,6 @@ export default function Navbar() {
 
     return (
         <nav className="bg-primary sticky top-0 z-50 drop-shadow">
-            {/* <header className="bg-[#F2385A]"> */}
             <div className="flex justify-between items-center py-4 md:mx-10 mx-5">
                 <div>
                     <Link href="/" className="text-white text-xl py-1 flex items-center gap-1">

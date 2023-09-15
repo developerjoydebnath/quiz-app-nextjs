@@ -15,16 +15,16 @@ export default function Navbar() {
     return (
         <nav className="bg-primary sticky top-0 z-50 drop-shadow">
             {/* <header className="bg-[#F2385A]"> */}
-            <div className="flex justify-between items-center py-4 mx-10">
+            <div className="flex justify-between items-center py-4 md:mx-10 mx-5">
                 <div>
-                    <Link href="/" className="text-white text-xl px-4 py-1 flex items-center gap-1">
+                    <Link href="/" className="text-white text-xl py-1 flex items-center gap-1">
                         <span>
                             <img className="h-10 w-10 rounded-full" src="/logo.webp" alt="" />
                         </span>
                         <span>QuizBee</span>
                     </Link>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="md:flex hidden items-center gap-3">
                     <Link className="text-white px-4 py-1" href="/topics">
                         Topics
                     </Link>
@@ -52,6 +52,9 @@ export default function Navbar() {
                             Login
                         </Link>
                     )}
+                </div>
+                <div className="md:hidden block">
+                    <h1>X</h1>
                 </div>
             </div>
         </nav>

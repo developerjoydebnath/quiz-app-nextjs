@@ -1,12 +1,13 @@
 'use client';
+import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 
 export default function Banner() {
     return (
         <div className="js__bg-image">
-            <div className="grid grid-cols-3 items-center mx-10 pt-10 pb-20">
-                <div className="col-span-2 ms-10 me-20">
-                    <h1 className="text-6xl font-bold mb-4 flex items-center gap-2">
+            <div className="grid grid-cols-3 items-center md:mx-10 mx-5 pt-10 pb-20">
+                <div className="md:col-span-2 col-span-3 md:ms-10 md:me-20 md:mb-0 mb-5">
+                    <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xsm:text-3xl font-bold mb-4 lg:flex items-center gap-2">
                         <span>Welcome to</span>
                         <span className="text-primary">
                             <Typewriter
@@ -20,7 +21,7 @@ export default function Banner() {
                             />
                         </span>
                     </h1>
-                    <p className="text-lg font-medium">
+                    <p className="xl:text-lg sm:text-base xsm:text-sm font-medium">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum, assumenda quia aut quos
                         repellat vero placeat dolores ex ab quae adipisci maiores non fugiat illo doloribus officiis
                         alias dolorum accusantium neque distinctio omnis debitis commodi! Sunt quam optio velit magnam
@@ -36,8 +37,16 @@ export default function Banner() {
                         Get started
                     </Button> */}
                 </div>
-                <div className="flex justify-end">
-                    <img height={600} width={600} src="/bee.webp" alt="" />
+                <div className="flex justify-end md:col-span-1  col-span-3">
+                    <Image
+                        height={500}
+                        width={500}
+                        style={{ width: '100%', height: '100%' }}
+                        className="md:px-0 px-8"
+                        src="/bee.webp"
+                        alt="bee"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
                 </div>
             </div>
         </div>

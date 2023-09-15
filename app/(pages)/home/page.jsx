@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import Banner from '../../../components/Home/Banner';
 import PopularTopics from '../../../components/Home/PopularTopics';
 import Ratings from '../../../components/Home/Ratings';
@@ -15,6 +16,7 @@ export default function Landing() {
                 <Testimonials />
                 <Ratings />
                 <Reviews />
+                <div id="contact_us">contact us</div>
             </div>
         </div>
     );

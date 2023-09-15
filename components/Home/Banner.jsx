@@ -1,12 +1,24 @@
 'use client';
+import Typewriter from 'typewriter-effect';
 
 export default function Banner() {
     return (
         <div className="js__bg-image">
             <div className="grid grid-cols-3 items-center mx-10 pt-10 pb-20">
                 <div className="col-span-2 ms-10 me-20">
-                    <h1 className="text-6xl font-bold mb-4">
-                        Welcome to <span className="text-primary">QuizBee</span>
+                    <h1 className="text-6xl font-bold mb-4 flex items-center gap-2">
+                        <span>Welcome to</span>
+                        <span className="text-primary">
+                            <Typewriter
+                                options={{
+                                    strings: ['QuizBee'],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 200,
+                                    deleteSpeed: 200,
+                                }}
+                            />
+                        </span>
                     </h1>
                     <p className="text-lg font-medium">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum, assumenda quia aut quos

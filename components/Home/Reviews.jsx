@@ -10,7 +10,7 @@ export default function Reviews() {
         autoplay: true,
     };
     return (
-        <section>
+        <section id="reviews">
             <div className="max-w-screen-xl mx-auto py-10">
                 <div className="mx-5">
                     <h1 className="border-b-2 border-[#5F49F2] mb-10 pb-5 text-2xl font-semibold">Reviews</h1>

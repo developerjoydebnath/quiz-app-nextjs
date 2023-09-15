@@ -1,13 +1,14 @@
 'use client';
 
-import TestLists from '../../../components/Quiz/TestLists';
+import TestLists from '../../../../components/Quiz/TestLists';
 
-export default function QuizList() {
+export default function QuizList({ params }) {
+    const topicName = params;
     return (
         <div>
             <div className="max-w-screen-lg mx-auto">
                 <div className="mx-3">
-                    <TestLists />
+                    <TestLists topicName={topicName} />
                 </div>
             </div>
         </div>

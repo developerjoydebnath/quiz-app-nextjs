@@ -6,12 +6,20 @@ const Heading = ({ children, iconName = '', className = '', iconClass }) => {
         switch (icon) {
             case 'trending':
                 return '/trending.png';
+            case 'trending-topic':
+                return '/trending-topic.png';
             case 'about-us':
                 return '/about-us.png';
             case 'review':
                 return '/complain.png';
             case 'rating':
                 return '/rating.png';
+            case 'topic':
+                return '/topic.png';
+            case 'chat':
+                return '/chat.png';
+            case 'contact':
+                return '/contact.png';
             default:
                 return '';
         }

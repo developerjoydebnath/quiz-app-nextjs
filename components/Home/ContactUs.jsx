@@ -8,7 +8,7 @@ const ContactUs = () => {
             <div className="mx-5">
                 <div className="max-w-screen-xl mx-auto my-10">
                     <div>
-                        <Heading iconName="rating" iconClass="h-6 w-6">
+                        <Heading iconName="contact" iconClass="h-9 w-9">
                             Contact Us
                         </Heading>
                         <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-10">
@@ -81,28 +81,28 @@ const ContactUs = () => {
                                 <div className="flex justify-center">
                                     <form className="flex flex-col justify-center items-center w-[400px] max-w-full px-5 py-10 z-20 rounded-md shadow-lg bg-[#5F49F2] ">
                                         <input
-                                            className="border w-96 sm:h-10 h-9 my-2 rounded ps-2 max-w-full outline-none text-gray-500"
-                                            placeholder="Your Name"
+                                            className="w-[340px] sm:h-10 h-9 my-2 rounded ps-2 max-w-full outline-none text-gray-500"
+                                            placeholder="Name"
                                             type="text"
                                         />
                                         <input
-                                            className="border w-96 sm:h-10 h-9 my-2 rounded ps-2 max-w-full outline-none text-gray-500"
-                                            placeholder="Your Email Address"
+                                            className="w-[340px] sm:h-10 h-9 my-2 rounded ps-2 max-w-full outline-none text-gray-500"
+                                            placeholder="Email Address"
                                             type="email"
                                         />
                                         <input
-                                            className="border w-96 sm:h-10 h-9 my-2 rounded ps-2 max-w-full outline-none text-gray-500"
-                                            placeholder="Your Phone Number"
+                                            className="w-[340px] sm:h-10 h-9 my-2 rounded ps-2 max-w-full outline-none text-gray-500"
+                                            placeholder="Phone Number"
                                             type="number"
                                         />
                                         <textarea
-                                            className="border w-96 h-20 rounded my-2 ps-2 outline-none max-w-full text-gray-500"
-                                            placeholder="Your Message"
+                                            className="w-[340px] h-20 rounded my-2 ps-2 outline-none max-w-full text-gray-500"
+                                            placeholder="Message"
                                             name=""
                                             id=""
                                         ></textarea>
                                         <input
-                                            className="border w-96 sm:h-10 h-9 my-2 max-w-full rounded bg-[#fde80e] font-bold"
+                                            className="w-[340px] sm:h-10 h-9 my-2 max-w-full rounded bg-[#fde80e] font-bold text-gray-600"
                                             type="submit"
                                             value="Send Message"
                                         />

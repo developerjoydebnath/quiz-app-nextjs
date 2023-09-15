@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -6,6 +8,7 @@ import { userLogOut } from '../../redux/features/auth/authSlice';
 export default function Navbar() {
     const auth = useSelector((state) => state.auth);
     const dispatch = useDispatch();
+    console.log(auth);
 
     const handleLogout = () => {
         localStorage.removeItem('auth');

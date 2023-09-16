@@ -1,8 +1,11 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { popularTopics } from '../../FakeData/FakeData';
 import Heading from '../Others/Heading';
+AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50 });
 
 export default function TopTopics() {
     const screen = window.screen.width;
@@ -16,14 +19,14 @@ export default function TopTopics() {
 
                     <div className="grid msm:grid-cols-2 grid-cols-1 msm:gap-y-10 gap-y-5 msm:gap-x-10 md:mt-8">
                         {popularTopics.slice(0, 6).map((topic) => (
-                            <Link key={topic.id} href={`/topics/${topic.title.toLowerCase()}`}>
+                            <Link data-aos="fade-up" key={topic.id} href={`/topics/${topic.title.toLowerCase()}`}>
                                 <div className="relative cursor-pointer" style={{ perspective: '500px' }}>
                                     <div
-                                        className={`h-20 w-full bg-pink-500 md:-ms-5 msm:-ms-3 rounded-md ${
+                                        className={`h-20 w-full bg-gradient-to-br from-pink-500 to-[#b10fa3] md:-ms-5 msm:-ms-3 rounded-md ${
                                             topic.id % 2 == 0 ? 'sm:-ms-6 xsm:-ms-3' : 'sm:ms-6 xsm:ms-3'
                                         } `}
                                         style={{
-                                            boxShadow: '3px 3px 1px 2px #4E4E4E',
+                                            boxShadow: '3px 3px 1px 2px #4f4f4f',
                                             transform: `rotateY(${
                                                 screen < 700 ? (topic.id % 2 == 0 ? '-10deg' : '10deg') : '-10deg'
                                             })`,

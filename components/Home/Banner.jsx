@@ -1,13 +1,22 @@
 'use client';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
+
+AOS.init();
 
 export default function Banner() {
     return (
         <div className="js__bg-image">
             <div className="grid grid-cols-3 items-center md:mx-10 mx-5 pt-10 pb-20">
-                <div className="md:col-span-2 col-span-3 md:ms-10 md:me-20 md:mb-0 mb-5">
-                    <h1 className="xl:text-6xl md:text-5xl sm:text-4xl xsm:text-3xl font-bold mb-4 lg:flex items-center gap-2">
+                <div className="md:col-span-2 col-span-3 md:ms-10 md:me-20 md:mb-0 mb-5 overflow-hidden">
+                    <h1
+                        data-aos="slide-right"
+                        data-aos-delay="100"
+                        data-aos-duration="500"
+                        className="xl:text-6xl md:text-5xl sm:text-4xl xsm:text-3xl font-bold mb-4 lg:flex items-center gap-2"
+                    >
                         <span>Welcome to</span>
                         <span className="text-primary">
                             <Typewriter
@@ -21,7 +30,13 @@ export default function Banner() {
                             />
                         </span>
                     </h1>
-                    <p className="xl:text-lg sm:text-base xsm:text-sm font-medium">
+                    <p
+                        data-aos="slide-right"
+                        data-aos-delay="500"
+                        data-aos-duration="500"
+                        data-aos-easing="ease"
+                        className="xl:text-lg sm:text-base xsm:text-sm font-medium"
+                    >
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum, assumenda quia aut quos
                         repellat vero placeat dolores ex ab quae adipisci maiores non fugiat illo doloribus officiis
                         alias dolorum accusantium neque distinctio omnis debitis commodi! Sunt quam optio velit magnam
@@ -37,12 +52,15 @@ export default function Banner() {
                         Get started
                     </Button> */}
                 </div>
-                <div className="flex justify-end md:col-span-1  col-span-3">
+                <div className="flex md:justify-end justify-center md:col-span-1  col-span-3">
                     <Image
+                        data-aos="fade-up-left"
+                        data-aos-delay="300"
+                        data-aos-duration="500"
                         height={500}
                         width={500}
-                        style={{ width: '100%', height: '100%' }}
-                        className="md:px-0 px-8"
+                        style={{}}
+                        className="md:px-0 px-8 md:w-full md:h-full msm:h-[500px] msm:w-[500px] sm:h-[400px] sm:w-[400px]"
                         src="/bee.webp"
                         alt="bee"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

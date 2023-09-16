@@ -1,8 +1,11 @@
 'use client';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import React from 'react';
 import { ratingsData } from '../../FakeData/RatingsData';
 import Heading from '../Others/Heading';
+AOS.init({ anchorPlacement: 'bottom-bottom', offset: 0 });
 
 export default function Ratings() {
     const [oneStars, setOneStars] = React.useState(0);
@@ -70,10 +73,13 @@ export default function Ratings() {
                                     {newArray.map((data, index) => (
                                         <div key={index} className="flex gap-2 justify-between items-center">
                                             <div>{data?.stars} Stars</div>
-                                            <div className="w-44 h-2 bg-[#5F49F2]  rounded-full">
+                                            <div className="w-44 h-2 bg-[#ececec]  rounded-full overflow-hidden">
                                                 <div
+                                                    data-aos="slide-right"
+                                                    data-aos-delay="100"
+                                                    data-aos-duration="500"
                                                     style={{ width: `${data?.percent}%` }}
-                                                    className={`h-full  bg-[#fde80e] rounded-full`}
+                                                    className={`h-full  bg-[#5F49F2] rounded-full`}
                                                 ></div>
                                             </div>
                                             <div>{data?.percent}%</div>

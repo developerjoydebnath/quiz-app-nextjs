@@ -7,7 +7,7 @@ export default function QuizList({ params }) {
     return (
         <div>
             <div className="max-w-screen-lg mx-auto">
-                <div className="mx-3">
+                <div className="mx-5">
                     <TestLists topicName={topicName} />
                 </div>
             </div>

@@ -7,7 +7,7 @@ export default function PopularTopic({ topic }) {
         <div className="flex justify-center items-center">
             <Link href={`/topics/${topic.title.toLowerCase()}`} className="w-fit bg-white shadow-md rounded">
                 <div className="">
-                    <div className="flex flex-col justify-center items-center sm:w-28 sm:h-28 h-16 w-16">
+                    <div className="flex flex-col justify-center items-center sm:w-28 sm:h-28 h-[75px] w-[75px]">
                         <div className=" bg-white">
                             <Image
                                 height={60}

@@ -5,10 +5,13 @@ import Link from 'next/link';
 import React from 'react';
 import { popularTopics } from '../../FakeData/FakeData';
 import Heading from '../Others/Heading';
-AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50 });
 
 export default function AllTopics() {
     const screen = window.screen.width;
+
+    React.useEffect(() => {
+        AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50 });
+    }, []);
     return (
         <section>
             <div className="mx-5 py-10">

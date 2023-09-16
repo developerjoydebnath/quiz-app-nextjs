@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 import React from 'react';
 import { ratingsData } from '../../FakeData/RatingsData';
 import Heading from '../Others/Heading';
-AOS.init({ anchorPlacement: 'bottom-bottom', offset: 0 });
 
 export default function Ratings() {
     const [oneStars, setOneStars] = React.useState(0);
@@ -26,6 +25,10 @@ export default function Ratings() {
         { stars: 2, value: twoStars, percent: Math.floor((twoStars / totalRatings) * 100) || 0 },
         { stars: 1, value: oneStars, percent: Math.floor((oneStars / totalRatings) * 100) || 0 },
     ];
+
+    React.useEffect(() => {
+        AOS.init({ anchorPlacement: 'bottom-bottom', offset: 0 });
+    }, []);
 
     React.useEffect(() => {
         ratingsData.map((data) => {

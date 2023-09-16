@@ -4,9 +4,10 @@ import 'aos/dist/aos.css';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 
-AOS.init();
-
 export default function Banner() {
+    React.useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <div className="js__bg-image">
             <div className="grid grid-cols-3 items-center md:mx-10 mx-5 pt-10 pb-20">

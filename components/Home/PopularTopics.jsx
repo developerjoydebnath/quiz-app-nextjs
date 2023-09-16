@@ -7,9 +7,10 @@ import { popularTopics } from '../../FakeData/FakeData';
 import Heading from '../Others/Heading';
 import PopularTopic from './PopularTopic';
 
-AOS.init({ offset: 0 });
-
 export default function PopularTopics() {
+    React.useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <section className="py-10 js__bg-img-2">
             <div className="mx-5">

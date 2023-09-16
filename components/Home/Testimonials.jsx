@@ -4,9 +4,10 @@ import Image from 'next/image';
 import React from 'react';
 import Heading from '../Others/Heading';
 
-AOS.init({ anchorPlacement: 'bottom-bottom', offset: 0 });
-
 export default function Testimonials() {
+    React.useEffect(() => {
+        AOS.init({ anchorPlacement: 'bottom-bottom', offset: 0 });
+    }, []);
     return (
         <section className="js__bg-img-3 mt-5">
             <div className="mx-5">

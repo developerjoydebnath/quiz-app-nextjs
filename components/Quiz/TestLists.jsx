@@ -8,13 +8,16 @@ import { popularTopics } from '../../FakeData/FakeData';
 import { quizData } from '../../FakeData/QuizData';
 import { Icon } from '../../Icons/Icon';
 import Heading from '../Others/Heading';
-AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50 });
 
 export default function TestLists({ topicName }) {
     const [dataOfQuiz, setDataOfQuiz] = React.useState([]);
     const data = quizData.find((d) => d.topic.toLowerCase() === topicName?.topicName);
     const selectedTopic = popularTopics.find((d) => d.title.toLowerCase() === topicName.topicName.toLowerCase());
     const complete = true;
+
+    React.useEffect(() => {
+        AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50 });
+    }, []);
 
     React.useEffect(() => {
         if (data) {

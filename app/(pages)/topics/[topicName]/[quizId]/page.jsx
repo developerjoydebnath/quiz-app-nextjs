@@ -4,7 +4,6 @@ import 'aos/dist/aos.css';
 import * as React from 'react';
 import { quizData } from '../../../../../FakeData/QuizData';
 import Loading from '../../../../../components/Loading/Loading';
-AOS.init();
 
 const Quiz = ({ params }) => {
     const [questionNo, setQuestionNo] = React.useState(1);
@@ -17,6 +16,10 @@ const Quiz = ({ params }) => {
     const findQuiz = quizData.find((q) => q.topic.toLowerCase() === params.topicName);
 
     const quiz = findQuiz && findQuiz.data.find((q) => q.id === Number(params.quizId));
+
+    React.useEffect(() => {
+        AOS.init();
+    }, []);
 
     React.useEffect(() => {
         if (findQuiz && quiz) {

@@ -19,7 +19,7 @@ export default function AllTopics() {
                             <Link key={topic.id} href={`/topics/${topic.title.toLowerCase()}`}>
                                 <div className="relative cursor-pointer" style={{ perspective: '500px' }}>
                                     <div
-                                        className={`h-20 w-full bg-pink-400 md:-ms-5 msm:-ms-3 rounded-md ${
+                                        className={`h-20 w-full bg-pink-500 md:-ms-5 msm:-ms-3 rounded-md ${
                                             topic.id % 2 == 0 ? 'sm:-ms-6 xsm:-ms-3' : 'sm:ms-6 xsm:ms-3'
                                         } `}
                                         style={{
@@ -32,7 +32,7 @@ export default function AllTopics() {
 
                                     <div className="absolute z-20 top-0 left-0 flex justify-center items-center gap-3 h-full w-full">
                                         <Image src={topic.img} height={35} width={35} alt={topic.title} />
-                                        <h3 className="text-lg font-bold text-black">{topic.title}</h3>
+                                        <h3 className="text-lg font-bold text-white">{topic.title}</h3>
                                     </div>
                                 </div>
                             </Link>

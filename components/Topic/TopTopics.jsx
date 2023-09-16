@@ -9,6 +9,7 @@ import Heading from '../Others/Heading';
 export default function TopTopics() {
     const screen = window.screen.width;
 
+    // initialize
     React.useEffect(() => {
         AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50 });
     }, []);

@@ -59,7 +59,7 @@ const Quiz = ({ params }) => {
         }
     };
 
-    // handle submit button and handling the correct answers
+    // handle submit button and handling the correct answers ===
     const handleSubmit = () => {
         // initial value of correct answers
         let correct = 0;

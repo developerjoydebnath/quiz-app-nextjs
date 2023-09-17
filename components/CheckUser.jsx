@@ -15,16 +15,10 @@ export const CheckUser = ({ children }) => {
     React.useEffect(() => {
         dispatch(loading(true));
         const auth = localStorage.getItem('auth');
-        const isUser = JSON.parse(auth);
+        const user = JSON.parse(auth);
 
-        if (isUser) {
-            dispatch(
-                userLoggedIn({
-                    user: 'admin@example.com',
-                    isLoggedIn: true,
-                    loading: false,
-                }),
-            );
+        if (user) {
+            dispatch(userLoggedIn(user));
         }
     }, []);
 

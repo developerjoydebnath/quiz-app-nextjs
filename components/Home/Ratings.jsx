@@ -79,7 +79,7 @@ export default function Ratings() {
                                             <div className="w-44 h-2 bg-[#ececec]  rounded-full overflow-hidden">
                                                 <div
                                                     data-aos="slide-right"
-                                                    data-aos-delay="100"
+                                                    data-aos-delay="200"
                                                     data-aos-duration="500"
                                                     style={{ width: `${data?.percent}%` }}
                                                     className={`h-full  bg-[#5F49F2] rounded-full`}

@@ -7,7 +7,10 @@ import { userLogOut } from '../../redux/features/auth/authSlice';
 
 export default function Navbar() {
     const auth = useSelector((state) => state.auth);
+    const mark = useSelector((state) => state.quizResult);
     const dispatch = useDispatch();
+
+    console.log(mark);
 
     const handleLogout = () => {
         localStorage.removeItem('auth');

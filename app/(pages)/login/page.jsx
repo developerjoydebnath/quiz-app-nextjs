@@ -25,14 +25,15 @@ export default function Login() {
         if (email === 'admin@example.com' && password === 'admin') {
             dispatch(
                 userLoggedIn({
-                    user: 'admin@example.com',
+                    email: 'admin@example.com',
                     isLoggedIn: true,
                     loading: false,
+                    user: 'admin',
                 }),
             );
             localStorage.setItem(
                 'auth',
-                JSON.stringify({ user: 'admin@example.com', isLoggedIn: true, loading: false }),
+                JSON.stringify({ email: 'admin@example.com', user: 'admin', isLoggedIn: true, loading: false }),
             );
         }
     };

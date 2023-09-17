@@ -6,7 +6,7 @@ import Heading from '../Others/Heading';
 
 export default function Testimonials() {
     React.useEffect(() => {
-        AOS.init({ anchorPlacement: 'bottom-bottom', offset: 0 });
+        AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50 });
     }, []);
     return (
         <section className="js__bg-img-3 mt-5">

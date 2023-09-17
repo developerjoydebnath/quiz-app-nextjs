@@ -20,6 +20,8 @@ const Heading = ({ children, iconName = '', className = '', iconClass, img, imgC
                 return '/chat.png';
             case 'contact':
                 return '/contact.png';
+            case 'result':
+                return '/results.png';
             default:
                 return '';
         }

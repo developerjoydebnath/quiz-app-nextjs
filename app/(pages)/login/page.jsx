@@ -15,7 +15,6 @@ export default function Login() {
 
     React.useEffect(() => {
         if (auth.isLoggedIn && path === '/login') {
-            console.log('form login pase');
             router.push('/');
         }
     }, [auth]);

@@ -73,7 +73,6 @@ const Quiz = ({ params }) => {
             selected.map((s) => (s.sop === q.correctAnswer && s.q === q.id ? (correct += 1) : correct)),
         );
 
-        setSelected([]);
         setQuestionNo(1);
 
         const result = {
@@ -89,7 +88,11 @@ const Quiz = ({ params }) => {
         dispatch(submitQuiz(result));
 
         router.push(`/topics/${params.topicName}/${params.quizId}/result`);
+
+        setSelected([]);
     };
+
+    console.log(selected);
 
     if (loading) {
         return <Loading />;

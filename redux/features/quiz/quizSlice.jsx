@@ -29,8 +29,6 @@ const quizSlice = createSlice({
             } else {
                 const duplicateQuiz = state.completed[idx]?.quiz.findIndex((c) => c.quizNo === action.payload.quizNo);
 
-                console.log(duplicateQuiz);
-
                 if (duplicateQuiz === -1) {
                     state.completed[idx].quiz.push({
                         correct: action.payload.correct,

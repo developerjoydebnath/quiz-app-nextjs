@@ -50,9 +50,6 @@ export default function Banner() {
                         ipsum voluptatibus. Explicabo veniam suscipit sed eveniet sint perferendis excepturi. Eum,
                         tempora nihil?
                     </p>
-                    {/* <Button className="px-5 py-2 rounded" onClick={() => console.log('ll')}>
-                        Get started
-                    </Button> */}
                 </div>
                 <div className="flex md:justify-end justify-center md:col-span-1  col-span-3 overflow-hidden">
                     <Image

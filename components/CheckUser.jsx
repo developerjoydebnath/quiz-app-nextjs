@@ -24,7 +24,6 @@ export const CheckUser = ({ children }) => {
 
     React.useEffect(() => {
         if (path !== '/' && !path.includes('home') && !auth?.isLoggedIn && !auth.loading) {
-            console.log('from private page');
             router.push('/login');
         }
         if (!auth.isLoggedIn) {

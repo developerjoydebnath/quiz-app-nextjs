@@ -23,7 +23,7 @@ const page = ({ params }) => {
             );
             if (isTopic) {
                 const matchedQuiz = isTopic.quiz.find((q) => q.quizNo === Number(params.quizId));
-                console.log(matchedQuiz.answered);
+
                 if (matchedQuiz) {
                     setAnswered(matchedQuiz.answered);
                 }

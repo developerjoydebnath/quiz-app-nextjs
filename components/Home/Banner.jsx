@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect';
 
 export default function Banner() {
     React.useEffect(() => {
-        AOS.init();
+        AOS.init({ offset: -50 });
     }, []);
     return (
         <div className="js__bg-image">
@@ -54,7 +54,7 @@ export default function Banner() {
                         Get started
                     </Button> */}
                 </div>
-                <div className="flex md:justify-end justify-center md:col-span-1  col-span-3">
+                <div className="flex md:justify-end justify-center md:col-span-1  col-span-3 overflow-hidden">
                     <Image
                         data-aos="fade-up-left"
                         data-aos-delay="300"

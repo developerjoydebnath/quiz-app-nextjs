@@ -35,9 +35,9 @@ export default function TestLists({ topicName }) {
                 >
                     {data?.topic} Quiz
                 </Heading>
-                <div>
+                <div className="overflow-hidden">
                     <Link
-                        data-aos="fade-left"
+                        data-aos="fade-up"
                         href={`/topics/${topicName?.topicName}/${data?.id}`}
                         key={data.id}
                         className={`my-5 md:py-5 py-3 md:px-5 px-3 rounded-md flex justify-between items-center cursor-pointer bg-gradient-to-br from-[#32e3fa] to-[#75ffe1] shadow-md`} // bg-[${randomColor()}]
@@ -59,7 +59,7 @@ export default function TestLists({ topicName }) {
 
                     {dataOfQuiz.length > 0 ? (
                         dataOfQuiz.map((data) => (
-                            <div key={data.id} data-aos="fade-left">
+                            <div key={data.id} data-aos="fade-up">
                                 <Link
                                     href={`/topics/${topicName?.topicName}/${data?.id}`}
                                     className={`my-5 md:py-5 py-3 md:px-5 px-3 rounded-md flex justify-between items-center cursor-pointer bg-gradient-to-br from-[#32e3fa] to-[#75ffe1] shadow-md`} // bg-[${randomColor()}]

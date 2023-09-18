@@ -21,7 +21,7 @@ export default function TopTopics() {
                         Top Topics
                     </Heading>
 
-                    <div className="grid msm:grid-cols-2 grid-cols-1 msm:gap-y-10 gap-y-5 msm:gap-x-10 md:mt-8">
+                    <div className="grid msm:grid-cols-2 grid-cols-1 msm:gap-y-10 gap-y-5 msm:gap-x-10 md:mt-8 overflow-hidden">
                         {popularTopics.slice(0, 6).map((topic) => (
                             <Link data-aos="fade-up" key={topic.id} href={`/topics/${topic.title.toLowerCase()}`}>
                                 <div className="relative cursor-pointer" style={{ perspective: '500px' }}>

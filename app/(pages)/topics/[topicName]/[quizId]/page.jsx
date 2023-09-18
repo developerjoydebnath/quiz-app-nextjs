@@ -99,7 +99,7 @@ const Quiz = ({ params }) => {
 
     return (
         <div>
-            <div className="sm:mx-5">
+            <div className="sm:mx-5 overflow-hidden">
                 <div
                     data-aos="zoom-out"
                     data-aos-delay="100"

@@ -10,8 +10,6 @@ export default function Navbar() {
     const mark = useSelector((state) => state.quizResult);
     const dispatch = useDispatch();
 
-    console.log(mark);
-
     const handleLogout = () => {
         localStorage.removeItem('auth');
         dispatch(userLogOut());

@@ -24,6 +24,19 @@ export const Icon = ({ className = '', icon = '' }) => {
                     <path d="M240-268 70-438q-12-12-11.5-28T71-494q12-11 28-11.5t28 11.5l142 142 56 56-29 28q-12 11-28 11.5T240-268Zm226 0L296-438q-11-11-11-27.5t11-28.5q12-12 28.5-12t28.5 12l141 141 340-340q12-12 28-11.5t28 12.5q11 12 11.5 28T890-636L522-268q-12 12-28 12t-28-12Zm28-198-57-56 170-170q11-11 27.5-11t28.5 11q12 12 12 28.5T663-635L494-466Z" />
                 </svg>
             );
+        case 'cross':
+            return (
+                <svg
+                    className={className}
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="Outline"
+                    viewBox="0 0 24 24"
+                    width="512"
+                    height="512"
+                >
+                    <path d="M18,6h0a1,1,0,0,0-1.414,0L12,10.586,7.414,6A1,1,0,0,0,6,6H6A1,1,0,0,0,6,7.414L10.586,12,6,16.586A1,1,0,0,0,6,18H6a1,1,0,0,0,1.414,0L12,13.414,16.586,18A1,1,0,0,0,18,18h0a1,1,0,0,0,0-1.414L13.414,12,18,7.414A1,1,0,0,0,18,6Z" />
+                </svg>
+            );
         case 'dot-pattern':
             return (
                 <svg className={className} id="10015.io" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
@@ -48,6 +61,7 @@ export const Icon = ({ className = '', icon = '' }) => {
                     <rect x="0" y="0" width="100%" height="100%" fill="url(#svg-pattern)"></rect>
                 </svg>
             );
+
         default:
             return;
     }

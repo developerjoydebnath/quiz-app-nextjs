@@ -1,15 +1,37 @@
 'use client';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { quizData } from '../../../../../../FakeData/QuizData';
+import { Icon } from '../../../../../../Icons/Icon';
 import Heading from '../../../../../../components/Others/Heading';
 
 const page = ({ params }) => {
+    const results = useSelector((state) => state.quizResult);
+    const [answered, setAnswered] = React.useState([]);
+    const router = useRouter();
+
     const findQuiz = quizData.find((q) => q.topic.toLowerCase() === params.topicName);
 
     const quiz = findQuiz && findQuiz.data.find((q) => q.id === Number(params.quizId));
 
-    console.log(quiz);
+    React.useEffect(() => {
+        if (results.completed.length > 0) {
+            const isTopic = results.completed.find(
+                (result) => result.topic.toLowerCase() === params.topicName.toLowerCase(),
+            );
+            if (isTopic) {
+                const matchedQuiz = isTopic.quiz.find((q) => q.quizNo === Number(params.quizId));
+                console.log(matchedQuiz.answered);
+                if (matchedQuiz) {
+                    setAnswered(matchedQuiz.answered);
+                }
+            }
+        } else {
+            router.push(`/topics/${params.topicName}`);
+        }
+    }, []);
 
     return (
         <div>
@@ -32,14 +54,46 @@ const page = ({ params }) => {
                                             {q.options.map((option, idx) => (
                                                 <div
                                                     id={`q-${q?.id}-op${option.id}`}
-                                                    className={`px-5 py-3 rounded-md cursor-pointer ${
+                                                    className={`rounded-md cursor-pointer ${
                                                         q.correctAnswer === option.id ? 'bg-green-500' : 'bg-gray-200'
                                                     }`}
                                                     key={option.id}
                                                 >
-                                                    <h4 className="sm:text-base text-sm">
-                                                        {['A', 'B', 'C', 'D'][idx]}. {option.option}
-                                                    </h4>
+                                                    <div
+                                                        className={`px-5 py-3 rounded-md flex justify-between items-center ${
+                                                            option.id === q.correctAnswer
+                                                                ? 'bg-green-500'
+                                                                : answered &&
+                                                                  answered.find(
+                                                                      (ans) => ans.q === q.id && option.id === ans.sop,
+                                                                  )
+                                                                ? 'bg-red-400'
+                                                                : ''
+                                                        }`}
+                                                    >
+                                                        <h4 className="sm:text-base text-sm">
+                                                            {['A', 'B', 'C', 'D'][idx]}. {option.option}
+                                                        </h4>
+                                                        <Icon
+                                                            icon={`${
+                                                                option.id === q.correctAnswer &&
+                                                                answered &&
+                                                                answered.find(
+                                                                    (ans) =>
+                                                                        ans.q === q.id && q.correctAnswer === ans.sop,
+                                                                )
+                                                                    ? 'done'
+                                                                    : answered &&
+                                                                      answered.find(
+                                                                          (ans) =>
+                                                                              ans.q === q.id && option.id === ans.sop,
+                                                                      )
+                                                                    ? 'cross'
+                                                                    : ''
+                                                            }`}
+                                                            className="h-4 w-4"
+                                                        />
+                                                    </div>
                                                 </div>
                                             ))}
                                         </div>

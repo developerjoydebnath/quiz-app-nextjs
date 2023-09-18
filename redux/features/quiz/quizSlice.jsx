@@ -10,15 +10,7 @@ const quizSlice = createSlice({
     initialState,
     reducers: {
         submitQuiz: (state, action) => {
-            // if (state.completed.length > 0) {
-            // const topicMatched = state.completed.filter((c) => c.topic === action.payload.topic);
-            // console.log(topicMatched);
-
-            // } else {
-
             const idx = state.completed.findIndex((c) => c?.topic === action.payload.topic) || 0;
-
-            console.log(idx);
 
             if (idx === -1) {
                 state.completed.push({
@@ -30,17 +22,27 @@ const quizSlice = createSlice({
                             totalMark: action.payload.totalMark,
                             obtainedMark: action.payload.obtainedMark,
                             quizNo: action.payload.quizNo,
+                            answered: action.payload.answered,
                         },
                     ],
                 });
             } else {
-                state.completed[idx].quiz.push({
-                    correct: action.payload.correct,
-                    incorrect: action.payload.incorrect,
-                    totalMark: action.payload.totalMark,
-                    obtainedMark: action.payload.obtainedMark,
-                    quizNo: action.payload.quizNo,
-                });
+                const duplicateQuiz = state.completed[idx]?.quiz.findIndex((c) => c.quizNo === action.payload.quizNo);
+
+                console.log(duplicateQuiz);
+
+                if (duplicateQuiz === -1) {
+                    state.completed[idx].quiz.push({
+                        correct: action.payload.correct,
+                        incorrect: action.payload.incorrect,
+                        totalMark: action.payload.totalMark,
+                        obtainedMark: action.payload.obtainedMark,
+                        quizNo: action.payload.quizNo,
+                        answered: action.payload.answered,
+                    });
+                } else {
+                    // do nothing ...
+                }
             }
 
             // }

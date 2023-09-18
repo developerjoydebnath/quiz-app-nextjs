@@ -1,6 +1,7 @@
 'use client';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useRouter } from 'next/navigation';
 import * as React from 'react';
 import { useDispatch } from 'react-redux';
 import { quizData } from '../../../../../FakeData/QuizData';
@@ -13,7 +14,7 @@ const Quiz = ({ params }) => {
     const [quizes, setQuizes] = React.useState([]);
     const [loading, setLoading] = React.useState(true);
     const dispatch = useDispatch();
-
+    const router = useRouter();
     const findQuiz = quizData.find((q) => q.topic.toLowerCase() === params.topicName);
 
     const quiz = findQuiz && findQuiz.data.find((q) => q.id === Number(params.quizId));
@@ -82,16 +83,13 @@ const Quiz = ({ params }) => {
             incorrect: quiz?.quizes.length - correct,
             totalMark: quiz?.quizes.length * 5,
             obtainedMark: correct * 5,
+            answered: selected,
         };
 
-        console.log(result);
-
         dispatch(submitQuiz(result));
-    };
 
-    // completed: [
-    //     { topic: null, quiz: [{ quizNo: null, correct: null, incorrect: null, totalMark: null, obtainedMark: null }] },
-    // ],
+        router.push(`/topics/${params.topicName}/${params.quizId}/result`);
+    };
 
     if (loading) {
         return <Loading />;

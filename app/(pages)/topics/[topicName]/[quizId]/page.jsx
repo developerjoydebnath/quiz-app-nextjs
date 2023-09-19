@@ -92,8 +92,6 @@ const Quiz = ({ params }) => {
         setSelected([]);
     };
 
-    console.log(selected);
-
     if (loading) {
         return <Loading />;
     }

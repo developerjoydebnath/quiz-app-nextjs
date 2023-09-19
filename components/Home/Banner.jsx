@@ -37,7 +37,7 @@ export default function Banner() {
                         data-aos-delay="500"
                         data-aos-duration="500"
                         data-aos-easing="ease"
-                        className="xl:text-lg sm:text-base xsm:text-sm font-medium"
+                        className="xl:text-lg sm:text-base xsm:text-sm font-normal"
                     >
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora illum, assumenda quia aut quos
                         repellat vero placeat dolores ex ab quae adipisci maiores non fugiat illo doloribus officiis

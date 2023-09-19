@@ -13,7 +13,7 @@ import Heading from '../Others/Heading';
 export default function TestLists({ topicName }) {
     const results = useSelector((state) => state.quizResult);
     const [dataOfQuiz, setDataOfQuiz] = React.useState([]);
-    const data = quizData.find((d) => d.topic.toLowerCase() === topicName?.topicName);
+    const dat = quizData.find((d) => d.topic.toLowerCase() === topicName?.topicName);
     const selectedTopic = popularTopics.find((d) => d.title.toLowerCase() === topicName.topicName.toLowerCase());
 
     React.useEffect(() => {
@@ -22,9 +22,21 @@ export default function TestLists({ topicName }) {
 
     const matchedTopic = results?.completed?.find((r) => r.topic.toLowerCase() === topicName.topicName.toLowerCase());
 
+    console.log('matched topic', matchedTopic);
+    console.log(dat);
+    console.log('data of quiz', dataOfQuiz);
+
+    console.log(matchedTopic?.quiz?.map((t) => t.quizNo).includes(15));
+
     React.useEffect(() => {
-        if (data) {
-            setDataOfQuiz(data.data);
+        if (matchedTopic) {
+            // const res = matchedTopic.find;
+        }
+    }, []);
+
+    React.useEffect(() => {
+        if (dat) {
+            setDataOfQuiz(dat.data);
         }
     }, []);
 
@@ -36,7 +48,7 @@ export default function TestLists({ topicName }) {
                     img={selectedTopic && selectedTopic.img}
                     imgClass="msm:h-8 msm:w-8 h-6 w-6 mb-1"
                 >
-                    {data?.topic} Quiz
+                    {dat?.topic} Quiz
                 </Heading>
                 <div className="overflow-hidden">
                     {dataOfQuiz.length > 0 ? (
@@ -69,20 +81,22 @@ export default function TestLists({ topicName }) {
                                         </h5>
                                     </div>
 
-                                    {matchedTopic?.quiz?.map((t, index) =>
-                                        t.quizNo === data.id ? (
-                                            <span key={index} className="text-start">
-                                                <p className="sm:text-sm text-xs">Correct: {t?.correct}</p>
-                                                <p className="sm:text-sm text-xs">
-                                                    Mark: {t?.obtainedMark}/{t?.totalMark}
-                                                </p>
-                                            </span>
-                                        ) : (
-                                            <p key={index} className="sm:text-sm text-xs">
-                                                Incomplete
-                                            </p>
-                                        ),
-                                    )}
+                                    <span className="text-start">
+                                        {matchedTopic?.quiz?.map(
+                                            (t, index) =>
+                                                t.quizNo === data.id && (
+                                                    <span key={index}>
+                                                        <p className="sm:text-sm text-xs">Correct: {t?.correct}</p>
+                                                        <p className="sm:text-sm text-xs">
+                                                            Mark: {t?.obtainedMark}/{t?.totalMark}
+                                                        </p>
+                                                    </span>
+                                                ),
+                                        )}
+                                        {!matchedTopic?.quiz?.map((t) => t.quizNo).includes(data.id) && (
+                                            <span className="sm:text-sm text-xs">Incomplete</span>
+                                        )}
+                                    </span>
                                 </Link>
                             </div>
                         ))

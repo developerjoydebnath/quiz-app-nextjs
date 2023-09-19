@@ -43,24 +43,24 @@ const page = ({ params }) => {
                     <div>
                         {quiz?.quizes &&
                             quiz.quizes.map((q) => (
-                                <div key={q.id} className="msm:mb-8 mb-5">
+                                <div key={q.id} className="msm:mb-8 mb-8">
                                     <div>
                                         <div className="flex justify-between">
                                             <h1 className="md:text-xl sm:text-lg text-base">
                                                 Question {q.id}: {q.question}
                                             </h1>
                                         </div>
-                                        <div className="grid msm:grid-cols-2 grid-cols-1 msm:gap-x-10 gap-y-5 msm:mt-3 mt-2">
+                                        <div className="grid msm:grid-cols-2 grid-cols-1 msm:gap-x-10 msm:gap-y-5 gap-y-3 msm:mt-3 mt-2">
                                             {q.options.map((option, idx) => (
                                                 <div
                                                     id={`q-${q?.id}-op${option.id}`}
-                                                    className={`rounded-md cursor-pointer ${
+                                                    className={`rounded-md ${
                                                         q.correctAnswer === option.id ? 'bg-green-500' : 'bg-gray-200'
                                                     }`}
                                                     key={option.id}
                                                 >
                                                     <div
-                                                        className={`px-5 py-3 rounded-md flex justify-between items-center ${
+                                                        className={`px-5 msm:py-3 py-2.5 rounded-md flex justify-between items-center ${
                                                             option.id === q.correctAnswer
                                                                 ? 'bg-green-500'
                                                                 : answered &&

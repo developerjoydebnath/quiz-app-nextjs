@@ -10,6 +10,7 @@ import Heading from '../../../../../../components/Others/Heading';
 const page = ({ params }) => {
     const results = useSelector((state) => state.quizResult);
     const [answered, setAnswered] = React.useState([]);
+    const [mark, setMark] = React.useState({});
     const router = useRouter();
 
     const findQuiz = quizData.find((q) => q.topic.toLowerCase() === params.topicName);
@@ -25,6 +26,7 @@ const page = ({ params }) => {
                 const matchedQuiz = isTopic.quiz.find((q) => q.quizNo === Number(params.quizId));
 
                 if (matchedQuiz) {
+                    setMark(matchedQuiz);
                     setAnswered(matchedQuiz.answered);
                 }
             }
@@ -40,6 +42,19 @@ const page = ({ params }) => {
                     <Heading className="mt-5" img="/results.png" imgClass="msm:h-7 msm:w-7 w-6 h-6">
                         Quiz Result
                     </Heading>
+                    <div className="my-10">
+                        <div>
+                            <h4 className="md:text-xl sm:text-lg text-base text-gray-600">
+                                Total Quiz: {mark?.totalMark / 5 || 0}
+                            </h4>
+                            <h4 className="md:text-xl sm:text-lg text-base text-gray-600">
+                                Correct: {mark?.correct || 0}
+                            </h4>
+                            <h4 className="md:text-xl sm:text-lg text-base text-gray-600">
+                                Obtained Mark: {mark?.correct || 0}
+                            </h4>
+                        </div>
+                    </div>
                     <div>
                         {quiz?.quizes &&
                             quiz.quizes.map((q) => (
@@ -104,7 +119,7 @@ const page = ({ params }) => {
                     <div className="my-10 msm:text-end text-center">
                         <Link
                             href={`/topics/${params.topicName}`}
-                            className="py-3 msm:py-3.5 px-5 rounded-md bg-gradient-to-br from-[#5F49F2] to-[#7f6df5] text-white msm:font-medium font-normal"
+                            className="py-3 msm:py-3.5 px-5 rounded-md bg-[#6f5bf3] hover:bg-[#5F49F2] text-white msm:font-medium font-normal"
                         >
                             Try Another One
                         </Link>

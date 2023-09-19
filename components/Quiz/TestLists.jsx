@@ -22,12 +22,6 @@ export default function TestLists({ topicName }) {
 
     const matchedTopic = results?.completed?.find((r) => r.topic.toLowerCase() === topicName.topicName.toLowerCase());
 
-    console.log('matched topic', matchedTopic);
-    console.log(dat);
-    console.log('data of quiz', dataOfQuiz);
-
-    console.log(matchedTopic?.quiz?.map((t) => t.quizNo).includes(15));
-
     React.useEffect(() => {
         if (matchedTopic) {
             // const res = matchedTopic.find;

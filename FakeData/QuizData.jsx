@@ -2370,208 +2370,232 @@ export const quizData = [
                 quizes: [
                     {
                         id: 1,
-                        question: 'what is the formula of water?',
+                        question: 'Who was the first President of the United States?',
                         correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'George Washington',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Thomas Jefferson',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Abraham Lincoln',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'John Adams',
                             },
                         ],
                     },
                     {
                         id: 2,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 1,
+                        question: 'In which year did Christopher Columbus first reach the Americas?',
+                        correctAnswer: 3,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: '1492',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: '1500',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: '1492',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: '1607',
                             },
                         ],
                     },
                     {
                         id: 3,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 1,
+                        question: 'Who is known for writing "The Art of War," an ancient Chinese military treatise?',
+                        correctAnswer: 4,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Genghis Khan',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Sun Tzu',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Mao Zedong',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Sun Tzu',
                             },
                         ],
                     },
                     {
                         id: 4,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 1,
+                        question:
+                            'Which Egyptian queen is famous for her relationships with Julius Caesar and Mark Antony?',
+                        correctAnswer: 2,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Nefertiti',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Cleopatra',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Hatshepsut',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Isis',
                             },
                         ],
                     },
                     {
                         id: 5,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 1,
+                        question: 'What event marked the beginning of World War I?',
+                        correctAnswer: 3,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'The assassination of Archduke Franz Ferdinand',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'The sinking of the Lusitania',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'The assassination of Archduke Franz Ferdinand',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'The signing of the Treaty of Versailles',
                             },
                         ],
                     },
                     {
                         id: 6,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 1,
+                        question: 'Who was the leader of the Soviet Union during the Cuban Missile Crisis?',
+                        correctAnswer: 2,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Joseph Stalin',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Nikita Khrushchev',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Vladimir Putin',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Mikhail Gorbachev',
                             },
                         ],
                     },
                     {
                         id: 7,
-                        question: 'what is the formula of water?',
+                        question: 'Which ancient wonder of the world was a monumental tomb built for a Pharaoh?',
                         correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'The Great Pyramid of Giza',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'The Hanging Gardens of Babylon',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'The Colossus of Rhodes',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'The Statue of Zeus at Olympia',
                             },
                         ],
                     },
                     {
                         id: 8,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 1,
+                        question: 'Who was the founder of the Mongol Empire?',
+                        correctAnswer: 3,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Genghis Khan',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Attila the Hun',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Genghis Khan',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Tamerlane',
                             },
                         ],
                     },
                     {
                         id: 9,
-                        question: 'what is the formula of water?',
+                        question: 'Which U.S. President issued the Emancipation Proclamation?',
+                        correctAnswer: 2,
+                        options: [
+                            {
+                                id: 1,
+                                option: 'Thomas Jefferson',
+                            },
+                            {
+                                id: 2,
+                                option: 'Abraham Lincoln',
+                            },
+                            {
+                                id: 3,
+                                option: 'George Washington',
+                            },
+                            {
+                                id: 4,
+                                option: 'Andrew Jackson',
+                            },
+                        ],
+                    },
+                    {
+                        id: 10,
+                        question: 'Who was the first woman to fly solo across the Atlantic Ocean?',
                         correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Amelia Earhart',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Bessie Coleman',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Harriet Quimby',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Jacqueline Cochran',
                             },
                         ],
                     },
@@ -2582,231 +2606,234 @@ export const quizData = [
                 quizes: [
                     {
                         id: 1,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 3,
+                        question: 'Which ancient civilization built the pyramids of Giza?',
+                        correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Egyptians',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Mayans',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Greeks',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Romans',
                             },
                         ],
                     },
                     {
                         id: 2,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 1,
+                        question: 'Who is often credited with inventing the printing press?',
+                        correctAnswer: 3,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Galileo Galilei',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Leonardo da Vinci',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Johannes Gutenberg',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Isaac Newton',
                             },
                         ],
                     },
                     {
                         id: 3,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 3,
+                        question: 'Which famous explorer is known for circumnavigating the Earth?',
+                        correctAnswer: 4,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Ferdinand Magellan',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Christopher Columbus',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Amerigo Vespucci',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Ferdinand Magellan',
                             },
                         ],
                     },
                     {
                         id: 4,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 3,
+                        question: 'Who wrote the "Iliad" and the "Odyssey"?',
+                        correctAnswer: 2,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Aesop',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Homer',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Sophocles',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Euripides',
                             },
                         ],
                     },
                     {
                         id: 5,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 2,
+                        question:
+                            'What was the name of the ship on which Charles Darwin sailed during his voyage to the Galapagos Islands?',
+                        correctAnswer: 3,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Santa Maria',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Mayflower',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'HMS Beagle',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Endeavour',
                             },
                         ],
                     },
                     {
                         id: 6,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 4,
+                        question: 'Who was the first woman to fly solo across the Atlantic Ocean?',
+                        correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Amelia Earhart',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Bessie Coleman',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Harriet Quimby',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Jacqueline Cochran',
                             },
                         ],
                     },
                     {
                         id: 7,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 3,
+                        question: 'What major event is associated with the fall of the Berlin Wall?',
+                        correctAnswer: 2,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Russian Revolution',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'End of the Cold War',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'French Revolution',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Cuban Missile Crisis',
                             },
                         ],
                     },
                     {
                         id: 8,
-                        question: 'what is the formula of water?',
+                        question: 'Which ancient civilization is known for its terracotta army?',
                         correctAnswer: 3,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Greeks',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Romans',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Chinese',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Mayans',
                             },
                         ],
                     },
                     {
                         id: 9,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 2,
+                        question:
+                            'Who was the first woman to win a Nobel Prize and remains the only person to win Nobel Prizes in two different scientific fields?',
+                        correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Marie Curie',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Rosalind Franklin',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Dorothy Crowfoot Hodgkin',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Barbara McClintock',
                             },
                         ],
                     },
                     {
                         id: 10,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 4,
+                        question:
+                            'Which U.S. President delivered the Gettysburg Address during the American Civil War?',
+                        correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Abraham Lincoln',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Thomas Jefferson',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'George Washington',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Andrew Jackson',
                             },
                         ],
                     },
@@ -2817,231 +2844,234 @@ export const quizData = [
                 quizes: [
                     {
                         id: 1,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 3,
+                        question: 'Who wrote "The Communist Manifesto"?',
+                        correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Karl Marx and Friedrich Engels',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Vladimir Lenin',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Joseph Stalin',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Leon Trotsky',
                             },
                         ],
                     },
                     {
                         id: 2,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 1,
+                        question: 'Which historical figure is known for the phrase "Let them eat cake"?',
+                        correctAnswer: 2,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Marie Antoinette',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Marie Antoinette',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Queen Victoria',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Catherine the Great',
                             },
                         ],
                     },
                     {
                         id: 3,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 3,
+                        question: 'Which ancient civilization is famous for the construction of the Great Wall?',
+                        correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Chinese',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Roman',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Greek',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Mayan',
                             },
                         ],
                     },
                     {
                         id: 4,
-                        question: 'what is the formula of water?',
+                        question: 'Who is considered the "Father of the American Revolution"?',
                         correctAnswer: 3,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Benjamin Franklin',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'John Adams',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Samuel Adams',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Thomas Paine',
                             },
                         ],
                     },
                     {
                         id: 5,
-                        question: 'what is the formula of water?',
+                        question: 'What was the main cause of the Irish Potato Famine in the 19th century?',
                         correctAnswer: 2,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Bacterial infection',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Potato blight',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Insect infestation',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Crop rotation failure',
                             },
                         ],
                     },
                     {
                         id: 6,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 4,
+                        question:
+                            'Which famous document established the principle of "no taxation without representation"?',
+                        correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'The Declaration of Independence',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'The Constitution',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'The Magna Carta',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'The Bill of Rights',
                             },
                         ],
                     },
                     {
                         id: 7,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 3,
+                        question: 'Who was the first woman to serve as Prime Minister of the United Kingdom?',
+                        correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Margaret Thatcher',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Queen Elizabeth II',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Indira Gandhi',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Angela Merkel',
                             },
                         ],
                     },
                     {
                         id: 8,
-                        question: 'what is the formula of water?',
+                        question: 'What event is often considered the start of the Renaissance in Europe?',
                         correctAnswer: 3,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'The fall of the Roman Empire',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: "The Hundred Years' War",
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'The Black Death',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'The Norman Conquest',
                             },
                         ],
                     },
                     {
                         id: 9,
-                        question: 'what is the formula of water?',
+                        question:
+                            'Who was the leader of the civil rights movement in the United States and gave the famous "I Have a Dream" speech?',
                         correctAnswer: 2,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Malcolm X',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Martin Luther King Jr.',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Jesse Jackson',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Rosa Parks',
                             },
                         ],
                     },
                     {
                         id: 10,
-                        question: 'what is the formula of water?',
-                        correctAnswer: 4,
+                        question:
+                            'Which explorer is credited with discovering the sea route to India in the 15th century?',
+                        correctAnswer: 1,
                         options: [
                             {
                                 id: 1,
-                                option: 'H2O',
+                                option: 'Vasco da Gama',
                             },
                             {
                                 id: 2,
-                                option: 'H2SO4',
+                                option: 'Christopher Columbus',
                             },
                             {
                                 id: 3,
-                                option: 'CO2',
+                                option: 'Amerigo Vespucci',
                             },
                             {
                                 id: 4,
-                                option: 'NO2',
+                                option: 'Ferdinand Magellan',
                             },
                         ],
                     },

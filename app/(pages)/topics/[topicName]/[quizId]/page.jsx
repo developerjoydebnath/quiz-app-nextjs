@@ -105,7 +105,7 @@ const Quiz = ({ params }) => {
                     className="max-w-screen-lg mx-auto msm:border-2  border-[#5F49F2]/60 my-10 py-5 rounded-lg"
                 >
                     <div className="mt-10 mx-5 flex sm:gap-5 gap-2 items-center">
-                        <div className="sm:h-3 h-2 w-full border rounded-full">
+                        <div className="sm:h-3 h-2.5 w-full border rounded-full">
                             <div
                                 style={{ height: '100%', width: progress }}
                                 className="bg-[#5F49F2] rounded-full transition-all"

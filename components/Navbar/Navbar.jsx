@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -28,33 +29,41 @@ export default function Navbar() {
                     <div>
                         <Link href="/" className="text-white text-xl py-1 flex items-center gap-1">
                             <span>
-                                <img className="h-10 w-10 rounded-full" src="/logo.webp" alt="" />
+                                <Image
+                                    height={40}
+                                    width={40}
+                                    className="h-10 w-10 rounded-full"
+                                    src="/logo.webp"
+                                    alt=""
+                                />
                             </span>
-                            <span>QuizBee</span>
+                            <span className="font-semibold">
+                                Quiz<span className="text-[#fde80e]">Bee</span>
+                            </span>
                         </Link>
                     </div>
                     <div className="md:flex hidden items-center gap-3">
-                        <Link className="text-white px-4 py-1" href="/">
+                        <Link className="text-white px-4 py-1 hover:text-[#fde80e]" href="/">
                             Home
                         </Link>
-                        <Link className="text-white px-4 py-1" href="/topics">
+                        <Link className="text-white px-4 py-1 hover:text-[#fde80e]" href="/topics">
                             Topics
                         </Link>
-                        <Link className="text-white px-4 py-1" href="/#reviews">
+                        <Link className="text-white px-4 py-1 hover:text-[#fde80e]" href="/#reviews">
                             Reviews
                         </Link>
-                        <Link className="text-white px-4 py-1" href="/#contact_us">
+                        <Link className="text-white px-4 py-1 hover:text-[#fde80e]" href="/#contact_us">
                             Contact Us
                         </Link>
 
                         {auth.isLoggedIn ? (
                             <React.Fragment>
-                                <Link className="text-white px-4 py-1" href="/user/account">
+                                <Link className="text-white px-4 py-1 hover:text-[#fde80e]" href="/user/account">
                                     Account
                                 </Link>
                                 <span
                                     onClick={handleLogout}
-                                    className="text-white px-4 py-1 cursor-pointer flex items-center gap-1"
+                                    className="text-white px-4 py-1 hover:text-[#fde80e] cursor-pointer flex items-center gap-1"
                                     href="/user/account"
                                 >
                                     <span>Logout</span>
@@ -62,7 +71,7 @@ export default function Navbar() {
                                 </span>
                             </React.Fragment>
                         ) : (
-                            <Link className="text-white px-4 py-1" href="/login">
+                            <Link className="text-white px-4 py-1 hover:text-[#fde80e]" href="/login">
                                 Login
                             </Link>
                         )}

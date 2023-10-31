@@ -10,7 +10,7 @@ export default function AllTopics() {
     const screen = window.screen.width;
 
     React.useEffect(() => {
-        AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50 });
+        AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50, once: true });
     }, []);
     return (
         <section>

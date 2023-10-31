@@ -9,7 +9,7 @@ import PopularTopic from './PopularTopic';
 
 export default function PopularTopics() {
     React.useEffect(() => {
-        AOS.init();
+        AOS.init({ once: true });
     }, []);
     return (
         <section className="py-10 js__bg-img-2">

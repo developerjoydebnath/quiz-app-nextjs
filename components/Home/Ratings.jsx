@@ -27,7 +27,7 @@ export default function Ratings() {
     ];
 
     React.useEffect(() => {
-        AOS.init({ anchorPlacement: 'bottom-bottom', offset: 0 });
+        AOS.init({ anchorPlacement: 'bottom-bottom', offset: 0, once: true });
     }, []);
 
     React.useEffect(() => {

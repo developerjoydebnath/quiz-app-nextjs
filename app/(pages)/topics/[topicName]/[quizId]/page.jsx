@@ -20,7 +20,7 @@ const Quiz = ({ params }) => {
     const quiz = findQuiz && findQuiz.data.find((q) => q.id === Number(params.quizId));
 
     React.useEffect(() => {
-        AOS.init();
+        AOS.init({ once: true });
     }, []);
 
     React.useEffect(() => {

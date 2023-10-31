@@ -7,7 +7,7 @@ import Typewriter from 'typewriter-effect';
 
 export default function Banner() {
     React.useEffect(() => {
-        AOS.init({ offset: -50 });
+        AOS.init({ offset: -50, once: true });
     }, []);
     return (
         <div className="js__bg-image">

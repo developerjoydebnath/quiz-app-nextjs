@@ -17,7 +17,7 @@ export default function TestLists({ topicName }) {
     const selectedTopic = popularTopics.find((d) => d.title.toLowerCase() === topicName.topicName.toLowerCase());
 
     React.useEffect(() => {
-        AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50 });
+        AOS.init({ anchorPlacement: 'bottom-bottom', offset: -50, once: true });
     }, []);
 
     const matchedTopic = results?.completed?.find((r) => r.topic.toLowerCase() === topicName.topicName.toLowerCase());

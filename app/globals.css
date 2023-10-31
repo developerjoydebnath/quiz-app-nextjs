@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    scroll-behavior: smooth;
+}
+
 .js__bg-image {
     background-image: url('/banner6.svg');
     background-size: cover;
